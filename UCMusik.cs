@@ -58,5 +58,10 @@ namespace Rileks2
         {
             player.controls.stop();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
