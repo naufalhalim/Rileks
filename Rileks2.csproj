@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{245E8094-AF4C-4EE5-9A5F-D1404FBAA55F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rileks2</RootNamespace>
+    <AssemblyName>Rileks2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBaseHasilDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseHasilDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HasilKuisioner.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HasilKuisioner.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCGrafik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGrafik.Designer.cs">
+      <DependentUpon>UCGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHalo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHalo.Designer.cs">
+      <DependentUpon>UCHalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHasil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHasil.Designer.cs">
+      <DependentUpon>UCHasil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMusik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMusik.Designer.cs">
+      <DependentUpon>UCMusik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCNama.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCNama.Designer.cs">
+      <DependentUpon>UCNama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest1.Designer.cs">
+      <DependentUpon>UCQuest1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest2.Designer.cs">
+      <DependentUpon>UCQuest2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest3.Designer.cs">
+      <DependentUpon>UCQuest3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest4.Designer.cs">
+      <DependentUpon>UCQuest4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest5.Designer.cs">
+      <DependentUpon>UCQuest5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest6.Designer.cs">
+      <DependentUpon>UCQuest6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest7.Designer.cs">
+      <DependentUpon>UCQuest7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest8.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest8.Designer.cs">
+      <DependentUpon>UCQuest8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuest9.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuest9.Designer.cs">
+      <DependentUpon>UCQuest9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCRule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRule.Designer.cs">
+      <DependentUpon>UCRule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UCGrafik.resx">
+      <DependentUpon>UCGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHalo.resx">
+      <DependentUpon>UCHalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHasil.resx">
+      <DependentUpon>UCHasil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMusik.resx">
+      <DependentUpon>UCMusik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCNama.resx">
+      <DependentUpon>UCNama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest1.resx">
+      <DependentUpon>UCQuest1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest2.resx">
+      <DependentUpon>UCQuest2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest3.resx">
+      <DependentUpon>UCQuest3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest4.resx">
+      <DependentUpon>UCQuest4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest5.resx">
+      <DependentUpon>UCQuest5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest6.resx">
+      <DependentUpon>UCQuest6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest7.resx">
+      <DependentUpon>UCQuest7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest8.resx">
+      <DependentUpon>UCQuest8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuest9.resx">
+      <DependentUpon>UCQuest9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCRule.resx">
+      <DependentUpon>UCRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataBaseHasilDataSet.xsc">
+      <DependentUpon>DataBaseHasilDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseHasilDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseHasilDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseHasilDataSet.xss">
+      <DependentUpon>DataBaseHasilDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HasilKuisioner.xsc">
+      <DependentUpon>HasilKuisioner.xsd</DependentUpon>
+    </None>
+    <None Include="HasilKuisioner.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HasilKuisioner.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HasilKuisioner.xss">
+      <DependentUpon>HasilKuisioner.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="DataBaseHasil.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataBaseHasil_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DataBaseHasil.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
