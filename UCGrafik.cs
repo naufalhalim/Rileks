@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 namespace Rileks2
 {
     public partial class UCGrafik : UserControl
-    {
+    { 
         public UCGrafik()
         {
            
